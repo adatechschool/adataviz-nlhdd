@@ -66,13 +66,24 @@ const printData = async () => {
       carte.classList.toggle("ouvert");
     });
 
+    if (i >= 10) {
+      carte.classList.add("cachee")
+    }
+
     carte.appendChild(span);
     carte.appendChild(img);
     carte.appendChild(section);
     carte.appendChild(bouton);
     carte.appendChild(details);
     app.appendChild(carte);
-  }
+
+    const boutonSuite = document.getElementById("voir-suite");
+    boutonSuite.addEventListener("click", () => {
+      const cachees = document.querySelectorAll(".cachee");
+      cachees.forEach((carte) => carte.classList.remove("cachee"));
+      boutonSuite.style.display = "none";
+    });
+  };
 };
 
 printData();

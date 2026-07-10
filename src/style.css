@@ -152,6 +152,10 @@ h3 {
   color: var(--text);
 }
 
+.cachee {
+  display: none;
+}
+
 .footer {
   max-width: 720px;
   margin: 48px auto 0;
