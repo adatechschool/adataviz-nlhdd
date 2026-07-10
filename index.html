@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="src/assets/livre-03.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>L'Emprunthèque</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="header">
+       <div class="titre-ligne">
+        <img src="src/assets/etagere-3.png" class="deco" alt="étagère" />
+        <h1>L'Emprunthèque</h1>
+       </div>
+      <p class="soustitre">
+        Les livres les plus empruntés au rayon adulte des bibliothèques parisiennes (2022)
+      </p>
+    </header>
+
+    <main class="container">
+      <div class="search">
+        <input type="search" id="recherche" placeholder="Recherche un titre ou un auteur" />
+      </div>
+       <div id="app" class="liste">
+
+       
+
+      <!-- <ul class="liste" id="liste">
+
+        <li class="ligne">
+          <div class="ligne-haut">
+            <span class="rang">1</span>
+            <img src="src/assets/livre-04.png" class="icone" alt="Livre marron" />
+            <div class="infos">
+              <p class="titre">Titre 1</p>
+              <p class="auteur">Auteur 1</p>
+            </div>
+            <button class="toggle" aria-label="Voir plus">⌄</button>
+          </div>
+          <div class="details">
+            <p>Nombre de prêts en 2022 : -</p>
+            <p>Nombre d'exemplaires : -</p>
+            <p>Nombre de prêts total : -</p>
+          </div>
+        </li>
+
+        <li class="ligne">  
+          <div class="ligne-haut">
+            <span class="rang">2</span>
+            <img src="src/assets/livre-07.png" class="icone" alt="Livre beige" />
+            <div class="infos">
+              <p class="titre">Titre 2</p>
+              <p class="auteur">Auteur 2</p>
+            </div>
+            <button class="toggle" aria-label="Voir plus">⌄</button>
+          </div>
+          <div class="details">
+            <p>Nombre de prêts en 2022 : -</p>
+            <p>Nombre d'exemplaires : -</p>
+            <p>Nombre de prêts total : -</p>
+          </div>
+        </li>
+
+        <li class="ligne">
+          <div class="ligne-haut">
+            <span class="rang">3</span>
+             <img src="src/assets/livre-04.png" class="icone" alt="Livre Marron" />
+            <div class="infos">
+              <p class="titre">Titre 3</p>
+              <p class="auteur">Auteur 3</p>
+            </div>
+            <button class="toggle" aria-label="Voir plus">⌄</button>
+            </div>
+            <div class="details">
+              <p>Nombre de prêts en 2022 : -</p>
+              <p>Nombre d'exemplaires : -</p>
+              <p>Nombre de prêts total : -</p>
+            </div>
+        </li>
+
+      </ul>
+ -->
+      <button class="voir-suite" id="voir-suite">Voir la suite du classement</button>
+
+        <footer class="footer">
+          <p>Données : <a href="https://opendata.paris.fr/explore/dataset/les-titres-les-plus-pretes/" target="_blank" rel="noopener">Paris Open Data</a></p>
+          <p>Icônes livres : <a href="https://andelrodis.itch.io/books-for-32x32" target="_blank" rel="noopener">Batuhan Karagöl</a>
+            · Icône étagère : <a href="https://sparksandpixels.itch.io/indoor-library-assetpack" target="_blank" rel="noopener">Andy (Sparks & Pixels)</a></p>
+        </footer>
+
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
