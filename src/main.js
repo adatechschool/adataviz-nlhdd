@@ -17,7 +17,7 @@ const getData = async () => {
 const printData = async () => {
   const resultData = await getData();
   console.log("résultat :", resultData);
-  app.innerHTML = "";
+  app.innerHTML = ""; // erease everything to be able to put the new boxes
 
   for (let i = 0; i < resultData.length; i++) {
     const carte = document.createElement("div");
@@ -28,7 +28,7 @@ const printData = async () => {
 
     const img = document.createElement("img");
     img.classList.add("icone");
-    img.src = i % 2 === 0 ? "/livre4.png" : "/livre7.png";
+    img.src = i % 2 === 0 ? "/livre4.png" : "/livre7.png"; //si i % 2 === 0, alors /livre4.png, sinon /livre7.png".
     img.alt = "icône de livre";
 
     const section = document.createElement("section");
@@ -77,6 +77,9 @@ const printData = async () => {
     carte.appendChild(details);
     app.appendChild(carte);
 
+    // When you click, you find all the hidden cards. 
+    // Remove the class "cachée" to show all the cards
+    // Then I hide the button 
     const boutonSuite = document.getElementById("voir-suite");
     boutonSuite.addEventListener("click", () => {
       const cachees = document.querySelectorAll(".cachee");

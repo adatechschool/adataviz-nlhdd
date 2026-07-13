@@ -128,14 +128,14 @@ h3 {
 /* INFOS DANS LE VOIR PLUS */
 .liste .details {
   display: none;   
-  flex-basis: 100%;         
+  flex-basis: 100%;  /* prend toute la largeur → passe dessous */
   padding: 12px 0 4px 42px;
   font-size: 13px;
   color: var(--text-muted);
 }
 
 .ligne.ouvert .details {
-  display: block;
+  display: block; /* visible si la ligne a la classe "ouvert" */
 }
 
 /* BOUTON VOIR SUITE */
